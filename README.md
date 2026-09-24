@@ -13,7 +13,7 @@
 
 ---
 
-## What is Face Restoration? (plain English)
+## What is Face Restoration?
 
 **Face Restoration finds faces in a video and cleans them up** — softer film grain on skin, sharper eyes/mouth, less mushy compression on close-ups — then writes a new video with those faces blended back in.
 
