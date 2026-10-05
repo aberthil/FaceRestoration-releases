@@ -1,4 +1,4 @@
-﻿# Face Restoration
+# Face Restoration
 
 <p align="center">
   <img src="assets/face-restoration.png" alt="Face Restoration" width="128" />
@@ -15,7 +15,7 @@
 
 ## What is Face Restoration?
 
-**Face Restoration finds faces in a video and cleans them up** — softer film grain on skin, sharper eyes/mouth, less mushy compression on close-ups — then writes a new video with those faces blended back in.
+**Face Restoration finds faces in a video and cleans them up** - softer film grain on skin, sharper eyes/mouth, less mushy compression on close-ups - then writes a new video with those faces blended back in.
 
 You drop episodes in, click **Start**, and walk away. Defaults are already tuned (CodeFormer / GFPGAN family, temporal stability on). Output lands in a `\faces\` folder next to your source.
 
@@ -26,8 +26,8 @@ You drop episodes in, click **Start**, and walk away. Defaults are already tuned
 | Step | In plain words |
 |------|----------------|
 | **Detect** | Find faces each frame (RetinaFace by default). |
-| **Restore** | Run an AI model on each face crop (GFPGAN, CodeFormer, GPEN, …). |
-| **Blend** | Paste restored faces back with temporal smoothing so they don’t flicker. |
+| **Restore** | Run an AI model on each face crop (GFPGAN, CodeFormer, GPEN, ...). |
+| **Blend** | Paste restored faces back with temporal smoothing so they don't flicker. |
 | **Encode** | Write a new video on the GPU; audio/subs stay with the remux. |
 
 Models download once on first open. Crops batch through the GPU for speed.
@@ -40,13 +40,13 @@ Models download once on first open. Crops batch through the GPU for speed.
   <img src="assets/gui-main.png" alt="Face Restoration main window" width="420" />
 </p>
 
-<p align="center"><em>Main window — drop live-action SDR episodes, queue, Start.</em></p>
+<p align="center"><em>Main window - drop live-action SDR episodes, queue, Start.</em></p>
 
 <p align="center">
   <img src="assets/gui-settings.png" alt="Face Restoration Settings" width="400" />
 </p>
 
-<p align="center"><em>Settings — GPU, encode, detector, face model, temporal stability.</em></p>
+<p align="center"><em>Settings - GPU, encode, detector, face model, temporal stability.</em></p>
 
 ---
 
@@ -55,8 +55,8 @@ Models download once on first open. Crops batch through the GPU for speed.
 1. Install from [Releases](https://github.com/aberthil/FaceRestoration-releases/releases/latest) and open **Face Restoration**.  
 2. Wait if models are still downloading (first open).  
 3. **Browse** or **drag-and-drop** SDR live-action videos / a show folder.  
-4. Optional: **Settings** → pick model (GFPGAN / CodeFormer / …) and encode bitrate.  
-5. **+ Add to Queue** → **Start**.  
+4. Optional: **Settings** -> pick model (GFPGAN / CodeFormer / ...) and encode bitrate.  
+5. **+ Add to Queue** -> **Start**.  
 6. Finished files appear under `\faces\` beside the source.
 
 ---
@@ -82,7 +82,7 @@ Installs to `C:\DolbyVisionScripts\FaceRestoration` by default. Settings / Pusho
 |--|--|
 | OS | Windows 10/11 **x64** |
 | GPU | **NVIDIA** CUDA (RTX recommended; VRAM depends on model / batch) |
-| Input | **SDR** live-action only — not HDR, not animation/CGI/anime |
+| Input | **SDR** live-action only - not HDR, not animation/CGI/anime |
 | Disk | Setup + CUDA venv (created during install) + model weights (first open) |
 
 ---
@@ -103,7 +103,7 @@ Installs to `C:\DolbyVisionScripts\FaceRestoration` by default. Settings / Pusho
 
 ### v1.0.14
 
-See [Releases](https://github.com/aberthil/FaceRestoration-releases/releases) for each Setup’s notes.
+See [Releases](https://github.com/aberthil/FaceRestoration-releases/releases) for each Setup's notes.
 
 ---
 
